@@ -1,0 +1,8 @@
+if cfg('ui', 'local')
+	script(src='http://localhost/cache/jquery.min.js')
+	script(src='http://localhost/cache/moment.min.js')
+else
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js')
+
+script(src=$ren->link_resource('script', 'public'))

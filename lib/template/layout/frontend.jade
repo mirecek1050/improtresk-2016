@@ -1,0 +1,55 @@
+.frontend
+	header
+		.site-logo
+			h1.text Improtřesk
+			h2.subtitle!=$res->subtitle
+
+		.site-menu
+			menu.data
+				li
+					a(href=$ren->url('home')) Domů
+				li
+					a(href=$ren->url('info')) Pro účastníky
+
+					menu.sub
+						li
+							a(href=$ren->url('workshops')) Workshopy
+						li
+							a(href=$ren->url('accommodation')) Ubytování
+						li
+							a(href=$ren->url('food')) Jídlo
+						li
+							a(href=$ren->url('fees')) Poplatky
+						li
+							a(href=$ren->url('tips')) Tipy
+
+				li
+					a(href=$ren->url('carshare')) Autem
+				li
+					a(href=$ren->url('signup')) Přihláška
+				li
+					a(href=$ren->url('schedule')) Program
+
+					menu.sub.long
+						li
+							a(href=$ren->url('schedule-daily')) Harmonogram
+						li
+							a(href=$ren->url('conference')) Tea konference
+				li
+					a(href=$ren->url('about')) O Improtřesku
+
+					menu.sub
+						li
+							a(href=$ren->url('faq')) Časté dotazy
+						li
+							a(href=$ren->url('orgs')) Organizátoři
+				li
+					a(href=$ren->url('contact')) Kontakt
+
+	.content
+		:php
+			$ren->slot('outer');
+
+		.content-inner
+			:php
+				$ren->slot();

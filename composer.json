@@ -1,0 +1,12 @@
+{
+	"name":"just-paja/fudjan-project",
+	"description":"Backbone for your fudjan projects",
+	"license":"GPL-3.0+",
+	"config":{
+		"vendor-dir":"lib/vendor"
+	},
+	"require":{
+		"just-paja/fudjan":"*",
+		"just-paja/fudjan-godmode": "^1.0"
+	}
+}

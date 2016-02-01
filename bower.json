@@ -1,0 +1,20 @@
+{
+  "name": "improtresk-2016",
+  "authors": [
+    "Pavel Žák <just.paja@gmail.com>"
+  ],
+  "description": "Website for improtresk theatre festival 2016",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://improtresk.cz",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "share/bower",
+    "test",
+    "tests"
+  ]
+}

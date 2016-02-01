@@ -1,0 +1,397 @@
+[
+	{
+		"name":"home",
+		"url":"/",
+		"title":"Improtřesk",
+		"subtitle":"Festival divadelní improvizace",
+		"modules":[
+			["system.partial", {"template":"pages/home"}]
+		]
+	},
+
+	{
+		"name":"year:2015",
+		"url":"/archiv/2015",
+		"title":"Improtřesk 2015",
+		"subtitle":"Festival divadelní improvizace (archív)",
+		"layout":["pages/archive/2015/layout"],
+		"modules":[
+			["system.partial", {
+				"template":"pages/archive/2015/home"
+			}]
+		]
+	},
+
+	{
+		"name":"workshops",
+		"url":"/workshopy",
+		"title":"Workshopy - Improtřesk 2015",
+		"subtitle":"Workshopy",
+		"modules":[
+			["system.partial", {"template":"partial/info"}],
+			["workshop.browse"]
+		]
+	},
+
+	{
+		"name":"accommodation",
+		"url":"/ubytovani",
+		"title":"Ubytování - Improtřesk 2015",
+		"subtitle":"Kde se bude spát",
+		"modules":[
+			["system.partial", {"template":"partial/info"}],
+			["system.partial", {"template":"pages/accomodation"}]
+		]
+	},
+
+	{
+		"name":"fees",
+		"url":"/cena",
+		"title":"Poplatky - Improtřesk 2015",
+		"subtitle":"Kolik se letos platí a za co",
+		"modules":[
+			["system.partial", {"template":"partial/info"}],
+			["system.partial", {"template":"pages/fees"}]
+		]
+	},
+
+	{
+		"name":"food",
+		"url":"/jidlo",
+		"title":"Jídlo - Improtřesk 2015",
+		"subtitle":"Co se bude jíst",
+		"modules":[
+			["system.partial", {"template":"partial/info"}],
+			["system.partial", {"template":"pages/food"}]
+		]
+	},
+
+	{
+		"name":"food.enter",
+		"url":"/jidlo/obedy",
+		"title":"Moje obědy - Improtřesk 2015",
+		"subtitle":"Co dostanu k obědu",
+		"modules":[
+			["system.partial", {"template":"partial/og-lunch", "slot":"og", "wrap":false}],
+			["system.partial", {"template":"partial/info"}],
+			["food.dispatcher"]
+		]
+	},
+
+	{
+		"name":"food.pick",
+		"url":"/jidlo/obedy/{symvar:number}",
+		"title":"Moje obědy - Improtřesk 2015",
+		"subtitle":"Co dostanu k obědu",
+		"modules":[
+			["system.partial", {"template":"partial/og-lunch", "slot":"og", "wrap":false}],
+			["system.partial", {"template":"partial/info"}],
+			["food.picker"]
+		]
+	},
+
+	{
+		"name":"tips",
+		"url":"/tipy",
+		"title":"Tipy - Improtřesk 2015",
+		"subtitle":"Tipy pro lepší zážitky",
+		"modules":[
+			["system.partial", {"template":"partial/og-tips", "slot":"og", "wrap":false}],
+			["system.partial", {"template":"partial/info"}],
+			["system.partial", {"template":"pages/tips"}]
+		]
+	},
+
+	{
+		"name":"about",
+		"url":"/co-je-improtresk",
+		"title":"Co je Improtřesk? - Improtřesk 2015",
+		"subtitle":"Co je to Improtřesk?",
+		"modules":[
+			["system.partial", {"template":"partial/menu-about"}],
+			["system.partial", {"template":"pages/about"}]
+		]
+	},
+
+	{
+		"name":"faq",
+		"url":"/caste-dotazy",
+		"title":"Časté dotazy - Improtřesk 2015",
+		"subtitle":"Na co se nás nejvíc ptáte",
+		"modules":[
+			["system.partial", {"template":"partial/menu-about"}],
+			["system.partial", {"template":"pages/faq"}]
+		]
+	},
+
+	{
+		"name":"orgs",
+		"url":"/organizatori",
+		"title":"Organizátoři - Improtřesk 2015",
+		"subtitle":"Kdo se o vás bude starat",
+		"modules":[
+			["system.partial", {"template":"partial/menu-about"}],
+			["system.partial", {"template":"pages/orgs"}]
+		]
+	},
+
+	{
+		"name":"signup",
+		"url":"/prihlaska",
+		"title":"Přihláška - Improtřesk 2015",
+		"subtitle":"Přihláška",
+		"modules":[
+			["forms.signup"]
+		]
+	},
+
+	{
+		"name":"info",
+		"url":"/pro-ucastniky",
+		"title":"Pro účastníky - Improtřesk 2015",
+		"subtitle":"Informace pro účastníky",
+		"modules":[
+			["system.partial", {"template":"partial/info"}],
+			["system.partial", {"template":"pages/info"}]
+		]
+	},
+
+	{
+		"name":"schedule",
+		"url":"/program",
+		"title":"Program - Improtřesk 2015",
+		"subtitle":"Program",
+		"modules":[
+			["system.partial", {"template":"partial/menu-schedule"}],
+			["system.partial", {"template":"pages/schedule"}]
+		]
+	},
+
+	{
+		"name":"schedule-daily",
+		"url":"/harmonogram",
+		"title":"Harmonogram - Improtřesk 2015",
+		"subtitle":"Harmonogram",
+		"modules":[
+			["system.partial", {"template":"partial/menu-schedule"}],
+			["system.partial", {"template":"pages/schedule-daily"}]
+		]
+	},
+
+	{
+		"name":"conference",
+		"url":"/konference",
+		"title":"Tea konference - Improtřesk 2015",
+		"subtitle":"Každý se stane řečníkem",
+		"modules":[
+			["system.partial", {"template":"partial/og-conference", "slot":"og", "wrap":false}],
+			["system.partial", {"template":"partial/menu-schedule"}],
+			["forms.conference_topic", {"slot":"topics-form"}],
+			["conference.topics", {"slot":"topics"}],
+			["system.partial", {"template":"pages/conference"}]
+		]
+	},
+
+	{
+		"name":"carshare",
+		"url":"/autem",
+		"title":"Cesta autem - Improtřesk 2015",
+		"subtitle":"Cesta autem",
+		"modules":[
+			["system.partial", {"template":"partial/og-carshare", "slot":"og", "wrap":false}],
+			["system.partial", {"template":"pages/carshare"}]
+		]
+	},
+
+	{
+		"name":"carshare_feed",
+		"url":"/autem/nabidka",
+		"title":"Cesta autem - Improtřesk 2015",
+		"format":"json",
+		"modules":[
+			["system.partial", {"template":"partial/og-carshare", "slot":"og", "wrap":false}],
+			["car.share"]
+		]
+	},
+
+	{
+		"name":"carshare_detail",
+		"url":"/autem/{id:number}",
+		"title":"Cesta autem - Improtřesk 2015",
+		"modules":[
+			["system.partial", {"template":"partial/og-carshare", "slot":"og", "wrap":false}],
+			["car.offer.detail"]
+		]
+	},
+
+	{
+		"name":"carshare_request",
+		"url":"/autem/{id:number}/poptavka",
+		"title":"Cesta autem - Improtřesk 2015",
+		"format":"json",
+		"modules":[
+			["system.partial", {"template":"partial/og-carshare", "slot":"og", "wrap":false}],
+			["car.request"]
+		]
+	},
+
+	{
+		"name":"carshare_admin",
+		"url":"/autem/{ident:varchar}/admin",
+		"modules":[
+			["system.partial", {"template":"partial/og-carshare", "slot":"og", "wrap":false}],
+
+			["car.offer.admin.detail", {
+				"module_id":"detail"
+			}],
+
+			["car.offer.admin.requests", {
+				"module_id":"requests"
+			}, ["detail"]]
+		]
+	},
+
+	{
+		"url":"/autem/{ident:varchar}/admin/edit",
+		"name":"carshare.admin.edit",
+		"modules":[
+			["system.partial", {"template":"partial/og-carshare", "slot":"og", "wrap":false}],
+			["car.share"],
+			["car.offer.admin.edit"]
+		]
+	},
+
+	{
+		"url":"/kontakt",
+		"name":"contact",
+		"title":"Kontakt - Improtřesk 2015",
+		"subtitle":"Kontaktní informace",
+		"modules":[
+			["system.partial", {"template":"pages/contact"}]
+		]
+	},
+
+	{
+		"name":"nonpayers",
+		"url":"/data/obedy/moje",
+		"title":"Obědy",
+		"subtitle":"Kdo co bude jíst",
+		"modules":[
+			["stats.participant_lunch"]
+		]
+	},
+
+	{
+		"name":"nonpayers",
+		"url":"/data/neplatici",
+		"title":"Neplatiči",
+		"subtitle":"Kdo nám ještě něco dluží",
+		"modules":[
+			["stats.non_payers"]
+		]
+	},
+
+	{
+		"name":"nonpayers",
+		"url":"/data/zapas",
+		"title":"Zápas, výsledky ankety",
+		"subtitle":"Kdo by měl hrát na zápase?",
+		"modules":[
+			["stats.match"]
+		]
+	},
+
+	{
+		"name":"team-stats",
+		"url":"/data/tymy",
+		"title":"Týmy",
+		"subtitle":"Kdo má největší účast?",
+		"modules":[
+			["stats.teams"]
+		]
+	},
+
+	{
+		"name":"concept",
+		"url":"/formulare/signup",
+		"modules":[
+			["forms.signup"]
+		]
+	},
+
+	{
+		"name":"concept",
+		"url":"/formulare/koncept",
+		"layout":["layout/base"],
+		"modules":[
+			["forms.concept"]
+		]
+	},
+
+	{
+		"name":"forms.match.dispatcher",
+		"title":"Anketa: Týmy na zápas - Improtřesk 2015",
+		"url":"/formulare/zapas",
+		"modules":[
+			["forms.match.dispatcher"]
+		]
+	},
+
+	{
+		"name":"forms.match",
+		"title":"Anketa: Týmy na zápas - Improtřesk 2015",
+		"url":"/formulare/zapas/{symvar:number}",
+		"modules":[
+			["forms.match"]
+		]
+	},
+
+	{
+		"name":"concept_feed",
+		"url":"/formulare/koncept/feed",
+		"format":"json",
+		"modules":[
+			["forms.concept_feed"]
+		]
+	},
+
+	{
+		"name":"concept_results",
+		"url":"/formulare/koncept/vysledky",
+		"layout":["layout/base"],
+		"modules":[
+			["forms.concept_results"]
+		]
+	},
+
+	{
+		"name":"stats.workshops",
+		"url":"/data/workshopy",
+		"title":"Stav workshopů",
+		"subtitle":"S kým budete na workshopu",
+		"modules":[
+			["stats.workshops", {"slot":"outer"}]
+		]
+	},
+
+	{
+		"name":"stats.signups",
+		"url":"/data/prihlasky",
+		"title":"Stav přihlášek",
+		"subtitle":"Jak to vypadá pod pokličkou",
+		"modules":[
+			["stats.signups"]
+		]
+	},
+
+	{
+		"name":"stats.meals",
+		"url":"/data/obedy",
+		"title":"Stav obědů",
+		"subtitle":"Kolik jídel objednáme",
+		"modules":[
+			["stats.meals"]
+		]
+	}
+
+]
