@@ -1,0 +1,12 @@
+@speed-slow:.5s;
+@speed-neutral:.3s;
+@speed-fast:.2s;
+
+.fix-transition(@time, @mode:linear)
+{
+	-webkit-transition:all @time @mode;
+	-moz-transition:all @time @mode;
+	-o-transition:all @time @mode;
+	-ms-transition:all @time @mode;
+	transition:all @time @mode;
+}

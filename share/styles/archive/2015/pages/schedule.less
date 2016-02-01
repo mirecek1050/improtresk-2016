@@ -1,0 +1,55 @@
+.schedule {
+	.site-summary {
+		margin-bottom:30px;
+	}
+
+	.day {
+		display:inline-block;
+		text-align:left;
+		vertical-align:top;
+		width:200px;
+
+		&.thursday ul {
+			padding-top:200px;
+		}
+
+		&.friday,
+		&.sunday
+		{
+			ul {
+				padding-top:70px;
+			}
+		}
+
+		li {
+			.inner {
+				.fix-transition(.5s);
+				border-radius:4px;
+				cursor:default;
+				display:block;
+				padding:8px;
+
+				&:hover {
+					background:rgba(0,0,0,.5);
+				}
+			}
+
+			a.inner {
+				cursor:pointer;
+				text-decoration:none;
+
+				.name {
+					text-decoration:underline;
+				}
+			}
+		}
+
+		.start {
+			font-weight:bold;
+		}
+
+		.name {
+			font-size:16px;
+		}
+	}
+}

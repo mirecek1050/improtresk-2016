@@ -1,0 +1,74 @@
+@font-face {
+	font-family:'metace';
+	font-style:normal;
+	font-weight:normal;
+	src:url(<resource(font,metace/metace-normal.eot)>) format('embedded-eot');
+	src:
+		url(<resource(font,metace/metace-normal.eot)>) format('embedded-eot'),
+		url(<resource(font,metace/metace-normal.woff)>) format('woff'),
+		url(<resource(font,metace/metace-normal.ttf)>) format('ttf');
+}
+
+@font-face {
+	font-family:'metace';
+	font-style:normal;
+	font-weight:bold;
+	src:url(<resource(font,metace/metace-bold.eot)>) format('embedded-eot');
+	src:
+		url(<resource(font,metace/metace-bold.eot)>) format('embedded-eot'),
+		url(<resource(font,metace/metace-bold.woff)>) format('woff'),
+		url(<resource(font,metace/metace-bold.ttf)>) format('ttf');
+}
+
+@font-face {
+	font-family:'roboto-condensed';
+	font-style:normal;
+	font-weight:normal;
+	src:local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://fonts.gstatic.com/s/robotocondensed/v12/Zd2E9abXLFGSr9G3YK2MsK8NE7_Gi-Xz52ZQ_AwfA78.woff) format('woff');
+}
+
+
+
+body {
+	font-family:'roboto-condensed';
+	font-size:18px;
+	line-height:22px;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+.heading
+{
+	font-weight:700;
+}
+
+h1,
+h2,
+.heading
+{
+	font-family:'metace', 'Arial', _sans;
+}
+
+h1,
+.heading
+{
+	font-size:32px;
+	line-height:46px;
+	margin-bottom:10px;
+}
+
+h2 {
+	font-size:24px;
+	line-height:36px;
+	margin-bottom:10px;
+}
+
+h3 {
+	text-transform:uppercase;
+}
+
