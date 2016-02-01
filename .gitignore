@@ -1,0 +1,9 @@
+/etc/conf.d/production
+/etc/conf.d/dev
+/etc/conf.d/env
+/var
+/share/bower
+/lib/vendor
+/.htaccess
+/.rocketeer
+/composer.lock
