@@ -17,6 +17,7 @@
 			"archive-2015":[
 				"bower/reset-css",
 				"bower/bootstrap/dist/css/bootstrap.css",
+				"styles/archive/main",
 				"styles/archive/2015/vars",
 				"styles/archive/2015/layout/fonts",
 				"styles/archive/2015/layout/base",

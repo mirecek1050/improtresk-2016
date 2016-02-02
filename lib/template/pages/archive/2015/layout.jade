@@ -21,9 +21,12 @@ html(lang=$loc->get_lang())
 			$ren->content_from('head');
 
 	body
-		:php
-			$ren->render_yield();
-			$ren->slot();
+		.container-fluid.container-archive
+			include ../header.jade
 
-		include ../footer.jade
-		include ../../../partial/ga.jade
+			:php
+				$ren->render_yield();
+				$ren->slot();
+
+			include ../footer.jade
+			include ../../../partial/ga.jade
