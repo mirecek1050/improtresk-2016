@@ -154,33 +154,7 @@
 		"title":"Program - Improtřesk 2015",
 		"subtitle":"Program",
 		"modules":[
-			["system.partial", {"template":"partial/menu-schedule"}],
 			["system.partial", {"template":"pages/schedule"}]
-		]
-	},
-
-	{
-		"name":"schedule-daily",
-		"url":"/harmonogram",
-		"title":"Harmonogram - Improtřesk 2015",
-		"subtitle":"Harmonogram",
-		"modules":[
-			["system.partial", {"template":"partial/menu-schedule"}],
-			["system.partial", {"template":"pages/schedule-daily"}]
-		]
-	},
-
-	{
-		"name":"conference",
-		"url":"/konference",
-		"title":"Tea konference - Improtřesk 2015",
-		"subtitle":"Každý se stane řečníkem",
-		"modules":[
-			["system.partial", {"template":"partial/og-conference", "slot":"og", "wrap":false}],
-			["system.partial", {"template":"partial/menu-schedule"}],
-			["forms.conference_topic", {"slot":"topics-form"}],
-			["conference.topics", {"slot":"topics"}],
-			["system.partial", {"template":"pages/conference"}]
 		]
 	},
 
