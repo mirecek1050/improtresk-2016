@@ -28,7 +28,6 @@
 		"title":"Workshopy - Improtřesk 2015",
 		"subtitle":"Workshopy",
 		"modules":[
-			["system.partial", {"template":"partial/info"}],
 			["workshop.browse"]
 		]
 	},
@@ -39,7 +38,6 @@
 		"title":"Ubytování - Improtřesk 2015",
 		"subtitle":"Kde se bude spát",
 		"modules":[
-			["system.partial", {"template":"partial/info"}],
 			["system.partial", {"template":"pages/accomodation"}]
 		]
 	},
@@ -50,7 +48,6 @@
 		"title":"Poplatky - Improtřesk 2015",
 		"subtitle":"Kolik se letos platí a za co",
 		"modules":[
-			["system.partial", {"template":"partial/info"}],
 			["system.partial", {"template":"pages/fees"}]
 		]
 	},
@@ -61,7 +58,6 @@
 		"title":"Jídlo - Improtřesk 2015",
 		"subtitle":"Co se bude jíst",
 		"modules":[
-			["system.partial", {"template":"partial/info"}],
 			["system.partial", {"template":"pages/food"}]
 		]
 	},
@@ -73,7 +69,6 @@
 		"subtitle":"Co dostanu k obědu",
 		"modules":[
 			["system.partial", {"template":"partial/og-lunch", "slot":"og", "wrap":false}],
-			["system.partial", {"template":"partial/info"}],
 			["food.dispatcher"]
 		]
 	},
@@ -85,7 +80,6 @@
 		"subtitle":"Co dostanu k obědu",
 		"modules":[
 			["system.partial", {"template":"partial/og-lunch", "slot":"og", "wrap":false}],
-			["system.partial", {"template":"partial/info"}],
 			["food.picker"]
 		]
 	},
@@ -97,7 +91,6 @@
 		"subtitle":"Tipy pro lepší zážitky",
 		"modules":[
 			["system.partial", {"template":"partial/og-tips", "slot":"og", "wrap":false}],
-			["system.partial", {"template":"partial/info"}],
 			["system.partial", {"template":"pages/tips"}]
 		]
 	},
@@ -151,7 +144,6 @@
 		"title":"Pro účastníky - Improtřesk 2015",
 		"subtitle":"Informace pro účastníky",
 		"modules":[
-			["system.partial", {"template":"partial/info"}],
 			["system.partial", {"template":"pages/info"}]
 		]
 	},

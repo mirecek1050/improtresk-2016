@@ -23,6 +23,11 @@
 				"styles/archive/2015/layout/base",
 				"styles/archive/2015/layout/main",
 				"styles/archive/2015/pages"
+			],
+
+			"archive-2016":[
+				"bower/bootstrap/dist/css/bootstrap.css",
+				"styles/archive/2016"
 			]
 		}
 	}

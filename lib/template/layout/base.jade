@@ -3,7 +3,7 @@ html(lang=$loc->get_lang())
 	head
 		include ../partial/scripts.jade
 
-		link(rel='stylesheet', type='text/css', href=$ren->link_resource('style', 'screen'))
+		link(rel='stylesheet', type='text/css', href=$ren->link_resource('style', 'archive-2016'))
 
 		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
 		meta(name="description", content="Improtřesk 2015 - Festival divadelní improvizace")
@@ -23,19 +23,24 @@ html(lang=$loc->get_lang())
 			$ren->content_from('head');
 
 	body
-		:php
-			$ren->render_yield();
-			$ren->slot();
+		.container-fluid
+			:php
+				$ren->render_yield();
+				$ren->slot();
 
-		.partners
-			a.partner.ii(href="http://improinstitut.cz")
-			a.partner.kdm(href="http://www.milevskem.cz/kultura-a-volny-cas/dum-kultury-milevsko")
-			a.partner.si(href="http://www.improinstitut.cz/#!seed-shop/cjg9")
+			footer
+				.col-sm-4.col-md-4
+					h3 Hlavní pořadatel
+					a.partner.il(href="http://improliga.cz")
 
-		.footer
-			a.partner.il(href="http://improliga.cz")
+				.col-sm-8.col-md-4.partners
+					h3 Partneři Improtřesku
+					a.partner.ii(href="http://improinstitut.cz")
+					a.partner.kdm(href="http://www.milevskem.cz/kultura-a-volny-cas/dum-kultury-milevsko")
+					a.partner.si(href="http://www.improinstitut.cz/#!seed-shop/cjg9")
 
-			h3 Archiv
-			a(href=$ren->url('year:2015')) Ročník 2015
+				.col-sm-12.col-md-4
+					h3 Archiv
+					a(href=$ren->url('year:2015')) Ročník 2015
 
 		include ../partial/ga.jade
