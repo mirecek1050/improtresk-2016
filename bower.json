@@ -16,5 +16,8 @@
     "share/bower",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
 }
