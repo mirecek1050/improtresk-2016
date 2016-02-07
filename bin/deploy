@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+app="improtresk-2016"
+artifact="var/packages/artifact.tar.gz"
+env=${1}
+dest="/tmp/${app}.${env}.tar.gz"
+
+if [ "$env" == "staging" ]; then
+  host=${STAGING_HOST}
+  hostAs=${STAGING_HOST_AS}
+elif [ "$env" == "production" ]; then
+  host=${PRODUCTION_HOST}
+  hostAs=${PRODUCTION_HOST_AS}
+fi
+
+# Copy artifact over
+# Copy deploy script over
+
+echo "Uploading data"
+scp ${artifact} circle-ci@${host}:${dest}
+
+ssh circle-ci@${host} bash -s << EOF
+hosting-install-fudjan --app-host "${hostAs}" --app-env "${env}" --app-name "${app}" --app-src "${dest}"
+EOF

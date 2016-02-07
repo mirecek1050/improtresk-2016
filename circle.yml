@@ -1,0 +1,23 @@
+machine:
+  php:
+    version: 5.5.9
+dependencies:
+  cache_directories:
+    - "lib/vendor"
+  pre:
+    - sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini
+  post:
+    - bower install
+    - ./bin/manage package artifact
+general:
+  artifacts:
+    - "var/packages"
+deployment:
+  staging:
+    branch: master
+    commands:
+      - ./bin/deploy staging
+  release:
+    tag: /[0-9]+\.[0-9]+\.[0-9]+/
+    commands:
+      - ./bin/deploy production
