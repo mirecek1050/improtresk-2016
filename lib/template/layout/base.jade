@@ -1,46 +1,46 @@
 doctype html
 html(lang=$loc->get_lang())
-	head
-		include ../partial/scripts.jade
+  head
+    include ../partial/scripts.jade
 
-		link(rel='stylesheet', type='text/css', href=$ren->link_resource('style', 'archive-2016'))
+    link(rel='stylesheet', type='text/css', href=$ren->link_resource('style', 'archive-2016'))
 
-		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-		meta(name="description", content="Improtřesk 2015 - Festival divadelní improvizace")
-		meta(name="viewport", content="width=device-width")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="description", content="Improtřesk 2015 - Festival divadelní improvizace")
+    meta(name="viewport", content="width=device-width")
 
-		meta(name="og:title", content=$res->title)
-		meta(name="og:type", content="website")
-		meta(name="og:description", content="Improtřesk je český festival divadelní improvizace a největší setkání improligových týmů z celé České republiky.")
-		meta(name="og:image", content=\System\Resource::get_url('static', 'pixmap', 'hands-softlight-og.jpg'))
-		meta(name="og:url", content=$rq->path)
+    meta(name="og:title", content=$res->title)
+    meta(name="og:type", content="website")
+    meta(name="og:description", content="Improtřesk je český festival divadelní improvizace a největší setkání improligových týmů z celé České republiky.")
+    meta(name="og:image", content=\System\Resource::get_url('static', 'pixmap', 'hands-softlight-og.jpg'))
+    meta(name="og:url", content=$rq->path)
 
-		:php
-			$ren->slot('og')
+    :php
+      $ren->slot('og')
 
-		:php
-			$ren->content_for('title', $res->title);
-			$ren->content_from('head');
+    :php
+      $ren->content_for('title', $res->title);
+      $ren->content_from('head');
 
-	body
-		.container-fluid
-			:php
-				$ren->render_yield();
-				$ren->slot();
+  body
+    .container-fluid
+      :php
+        $ren->render_yield();
+        $ren->slot();
 
-			footer
-				.col-sm-4.col-md-4
-					h3 Hlavní pořadatel
-					a.partner.il(href="http://improliga.cz")
+      hr
 
-				.col-sm-8.col-md-4.partners
-					h3 Partneři Improtřesku
-					a.partner.ii(href="http://improinstitut.cz")
-					a.partner.kdm(href="http://www.milevskem.cz/kultura-a-volny-cas/dum-kultury-milevsko")
-					a.partner.si(href="http://www.improinstitut.cz/#!seed-shop/cjg9")
+      footer.container
+        .col-sm-6
+          h3 Archiv
+          a(href=$ren->url('year:2015')) Ročník 2015
 
-				.col-sm-12.col-md-4
-					h3 Archiv
-					a(href=$ren->url('year:2015')) Ročník 2015
+        .col-sm-6.partners
+          a.partner.il(href="http://improliga.cz")
+            span.partner-avatar.improliga
+            span.partner-label
+              span.name Česká improvizační liga
+              br
+              span.function (Hlavní pořadatel)
 
-		include ../partial/ga.jade
+    include ../partial/ga.jade

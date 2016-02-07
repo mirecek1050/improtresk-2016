@@ -4,6 +4,7 @@
 		"url":"/",
 		"title":"Improtřesk",
 		"subtitle":"Festival divadelní improvizace",
+		"layout": ["layout/base"],
 		"modules":[
 			["system.partial", {"template":"pages/home"}]
 		]

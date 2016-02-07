@@ -1,20 +1,37 @@
 .partner {
-  display:inline-block;
-  height:60px;
-  margin-right:25px;
-  opacity:.65;
-  vertical-align:bottom;
-  width:60px;
+  display: inline-block;
+  height: 60px;
+  margin-right: 25px;
+  opacity: .65;
+  text-align: left;
+  vertical-align: bottom;
 
   &:last-child {
-    margin:0;
+    margin: 0;
   }
 
   &:hover {
-    opacity:1;
+    opacity: 1;
   }
+}
 
-  &.il {
+.partner-label {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 23px;
+
+  .name {
+    font-weight: bolder;
+  }
+}
+
+.partner-avatar {
+  display: inline-block;
+  height: 60px;
+  margin-right: 1rem;
+  width: 60px;
+
+  &.improliga {
     background-image:url(<pixmap(logo/improliga.png)>);
   }
 
