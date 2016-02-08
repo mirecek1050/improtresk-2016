@@ -112,7 +112,6 @@
 		"title":"Časté dotazy - Improtřesk 2015",
 		"subtitle":"Na co se nás nejvíc ptáte",
 		"modules":[
-			["system.partial", {"template":"partial/menu-about"}],
 			["system.partial", {"template":"pages/faq"}]
 		]
 	},
@@ -123,7 +122,6 @@
 		"title":"Organizátoři - Improtřesk 2015",
 		"subtitle":"Kdo se o vás bude starat",
 		"modules":[
-			["system.partial", {"template":"partial/menu-about"}],
 			["system.partial", {"template":"pages/orgs"}]
 		]
 	},
