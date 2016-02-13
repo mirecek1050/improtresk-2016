@@ -4,6 +4,7 @@ machine:
 dependencies:
   cache_directories:
     - "lib/vendor"
+    - "share/bower"
   pre:
     - sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini
   post:
