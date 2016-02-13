@@ -23,3 +23,5 @@ ssh circle-ci@${host} bash -s << EOF
 hosting-install-fudjan --app-host "${hostAs}" --app-env "${env}" --app-name "${app}" --app-src "${dest}"
 exit $?
 EOF
+
+exit $?
