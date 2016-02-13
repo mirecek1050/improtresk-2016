@@ -17,6 +17,6 @@ fi
 # Copy deploy script over
 
 echo "Uploading data"
-scp ${artifact} circle-ci@${host}:${dest}
+scp ${artifact} www-data@${host}:${dest}
 
-ssh circle-ci@${host} hosting-install-fudjan --app-host "${hostAs}" --app-env "${env}" --app-name "${app}" --app-src "${dest}"
+ssh www-data@${host} hosting-install-fudjan --app-host "${hostAs}" --app-env "${env}" --app-name "${app}" --app-src "${dest}"
