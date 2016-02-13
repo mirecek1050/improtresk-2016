@@ -19,9 +19,4 @@ fi
 echo "Uploading data"
 scp ${artifact} circle-ci@${host}:${dest}
 
-ssh circle-ci@${host} bash -s << EOF
-hosting-install-fudjan --app-host "${hostAs}" --app-env "${env}" --app-name "${app}" --app-src "${dest}"
-exit $?
-EOF
-
-exit $?
+ssh circle-ci@${host} hosting-install-fudjan --app-host "${hostAs}" --app-env "${env}" --app-name "${app}" --app-src "${dest}"
