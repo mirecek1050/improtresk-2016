@@ -23,24 +23,24 @@ html(lang=$loc->get_lang())
       $ren->content_from('head');
 
   body
-    .container-fluid
-      :php
-        $ren->render_yield();
-        $ren->slot();
+    :php
+      $ren->render_yield();
+      $ren->slot();
 
-      hr
+    hr
 
-      footer.container
-        .col-sm-6
+    footer
+      .container
+        .col-sm-6.text-xs-center
           h3 Archiv
           a(href=$ren->url('year:2015')) Ročník 2015
 
-        .col-sm-6.partners
-          a.partner.il(href="http://improliga.cz")
-            span.partner-avatar.improliga
-            span.partner-label
-              span.name Česká improvizační liga
-              br
-              span.function (Hlavní pořadatel)
+        .col-sm-6
+          .partners.text-xs-center.text-md-right
+            h3 Pořadatel
+            a.partner.il(href="http://improliga.cz")
+              span.partner-label
+                span.name Česká<br>improvizační<br>liga
+              span.partner-avatar.improliga
 
     include ../partial/ga.jade
