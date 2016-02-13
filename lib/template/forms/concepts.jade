@@ -1,9 +1,18 @@
-.text-center
-  h1 Improtřesk 2016
+.site-heading
+  .site-header-image.small.side
+    img(src=$ren->link_resource('pixmap', 'archiv/2016/site-surf.png'))
+
+    h1 Předvýběr workshopů
 
 .container
-  if $show_form
-    .form-concepts
-  else
-    .concepts-thanks
-      p Hlasování bylo ukončeno. Děkujeme za vaše hlasy. Sledujte <a href="https://www.facebook.com/events/1398346530471289/">facebookovou událost</a> kvůli novinkám.
+
+
+
+  .container
+    if $show_form
+      .form-concepts
+    else
+      .concepts-thanks
+        p Hlasování bylo ukončeno. Děkujeme za vaše hlasy. Sledujte <a href="https://www.facebook.com/events/1398346530471289/">facebookovou událost</a> kvůli novinkám.
+
+.cleaner
