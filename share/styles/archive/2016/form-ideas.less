@@ -1,0 +1,178 @@
+.ui-form-workshop_ideas {
+  margin-bottom:20px;
+
+  ul {
+    padding:0;
+  }
+
+  .input-container,
+  label {
+    display:inline-block;
+    vertical-align:top;
+  }
+
+  li {
+    list-style: none;
+    white-space: normal;
+
+    &.input {
+    }
+
+    &.input-checkbox {
+      label {
+        line-height:22px;
+      }
+
+     .input-checkbox {
+        display:inline-block;
+        vertical-align:top;
+        white-space: nowrap;
+
+        .input-container {
+          padding:5px 0 0;
+        }
+
+        label {
+          white-space: normal;
+
+          .name {
+            font-size:20px;
+          }
+
+          .diff {
+            color:#666;
+            font-size:12px;
+          }
+        }
+      }
+    }
+  }
+
+  .form-group-typed-inputs {
+    margin-bottom:25px;
+  }
+
+  & > .desc {
+    font-size:20px;
+    line-height:24px;
+    margin-bottom:30px;
+  }
+
+  .input-named-name,
+  .input-named-email
+  {
+    font-size:22px;
+
+    label {
+      line-height:37px;
+      margin:0;
+      padding:0;
+      width:120px;
+    }
+  }
+
+  .input-named-name {
+    margin-bottom:1rem;
+  }
+
+  .input-named-email {
+    margin-bottom:30px;
+  }
+
+  .input-named-workshops {
+    margin-bottom:0;
+
+    & > .outer > label {
+      font-size:22px;
+      margin-bottom:20px;
+    }
+  }
+
+  .input-named-other {
+    padding-left:40px;
+
+    label {
+      display:none;
+    }
+
+    textarea {
+      min-height:110px;
+      min-width:300px;
+    }
+  }
+
+  .input-checkbox {
+    input {
+      height:auto;
+      width:auto;
+    }
+
+    label {
+      height:auto;
+    }
+  }
+
+  .checkbox-multi {
+    .input {
+      border-radius:6px;
+      cursor:pointer;
+      padding:10px 10px 13px;
+
+      label {
+        cursor:pointer;
+      }
+
+      &:hover {
+        background:rgba(255,255,255,.15);
+      }
+
+      &:last-child {
+        margin-bottom:0;
+      }
+    }
+  }
+
+  button,
+  .button,
+  .fp-button
+  {
+    color:#fff;
+    background:#B82429;
+    font-weight:normal;
+    border:none;
+    padding:5px 18px;
+    border-radius:3px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+    font-size:24px;
+    text-transform:uppercase;
+
+    &:hover {
+      background:#86262A;
+    }
+  }
+
+  button {
+    display:block;
+    width:150px;
+    margin:0 auto;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .ui-form-workshop_ideas .input-checkbox .input-checkbox {
+    width:50%;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px){
+  .ui-form-workshop_ideas .input-checkbox .input-checkbox {
+    width:32%;
+  }
+}

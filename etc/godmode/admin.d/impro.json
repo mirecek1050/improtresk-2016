@@ -1,0 +1,71 @@
+[
+	{
+		"title":"Ankety",
+		"items":[
+			{
+				"title":"Workshopy",
+				"opts":{
+					"model":"Workshop.Concept"
+				}
+			},
+
+			{
+				"title":"Týmy na zápas",
+				"opts":{
+					"model":"Survey.TeamAnswer"
+				}
+			},
+
+			{
+				"title":"Témata konference",
+				"opts":{
+					"model":"Conference.Topic"
+				}
+			}
+		]
+	},
+
+	{
+		"title":"Workshopy",
+		"opts":{
+			"model":"Workshop",
+			"attrs_list":["name", "lector", "visible", "updated_at"]
+		}
+	},
+
+	{
+		"title":"Nabídky spolujízdy",
+		"opts":{
+			"model":"Car.Offer",
+			"attrs_list":["id", "from", "driver", "seats", "icon", "visible", "created_at"],
+			"attrs_edit":["color", "seats", "icon", "desc", "driver", "from", "departure", "phone", "email", "visible"],
+			"attrs_create":["color", "seats", "icon", "desc", "driver", "from", "departure", "phone", "email", "visible"]
+		}
+	},
+
+	{
+		"title":"Přihlášky",
+		"opts":{
+			"model":"Workshop.SignUp",
+			"ui_filters":[
+				"lunch",
+				"paid",
+				"solved"
+			],
+
+			"attrs_list":["name_first", "name_last", "team", "check", "assigned_to", "lunch", "paid", "solved", "created_at"],
+			"attrs_info":["id", "name_first", "name_last", "team", "email", "phone", "lunch", "paid", "solved", "assigned_to", "check", "workshops", "created_at"],
+			"attrs_edit":["team", "email", "phone", "lunch", "solved", "assigned_to"]
+		}
+	},
+
+	{
+		"title":"Přijaté platby",
+		"opts":{
+			"model":"Workshop.Payment",
+
+			"attrs_list":["bank", "from", "amount", "currency", "symvar", "received", "created_at"],
+			"attrs_edit":["symvar", "received", "check"]
+		}
+	}
+]

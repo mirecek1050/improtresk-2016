@@ -128,10 +128,11 @@
 				for (var i = 0 ; i < items.length; i++) {
 					var label = pwf.jquery.div('workshop-option');
 
-					label.create_divs(['name', 'desc']);
+					label.create_divs(['name', 'desc', 'diff']);
 
 					label.name.html(items[i].get('name'));
 					label.desc.html(items[i].get('desc'));
+					label.diff.html('(' + items[i].get('difficulty') + ')');
 
 					opts.push({
 						'name':pwf.jquery.div('a').html(label).html(),
