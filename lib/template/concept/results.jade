@@ -1,0 +1,23 @@
+:php
+  $x = 1;
+
+.container.results-mini
+  h1 Výsledky předvýběru
+  .results
+    ol.results-inner
+      - foreach $concepts as $concept
+        li.result.workshop(class='pos-'.$x)
+          span.name!=$concept->name
+          span.count!=$concept->total
+
+  .results.results-total
+    .results-inner.
+      Celkem hlasovalo #{count} lidí
+
+  .results.results-verbal
+    ul
+      -foreach $requests as $rq
+        li.result.results-inner
+          span.author #{$rq->name}:
+          = ' '
+          span.desc #{$rq->other}

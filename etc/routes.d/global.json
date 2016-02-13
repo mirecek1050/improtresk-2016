@@ -320,8 +320,8 @@
 	},
 
 	{
-		"name":"concept_results",
-		"url":"/formulare/koncept/vysledky",
+		"name":"stats:concept",
+		"url":"/data/predvyber",
 		"layout":["layout/base"],
 		"modules":[
 			["forms.concept_results"]
@@ -329,7 +329,7 @@
 	},
 
 	{
-		"name":"stats.workshops",
+		"name":"stats:workshops",
 		"url":"/data/workshopy",
 		"title":"Stav workshopů",
 		"subtitle":"S kým budete na workshopu",
