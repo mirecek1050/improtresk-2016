@@ -3,7 +3,7 @@
 	"global":{
 		"rules":[".*"],
 		"layout":["layout/base", "layout/frontend"],
-		"policies":["www_free"],
+		"policies":["www_free", "frontend_config", "frontend_api"],
 		"init":["godmode"]
 	}
 }

@@ -2,7 +2,28 @@
 	"packages":{
 		"script":{
 			"public":[
-				"bower/async",
+				"bower/neo-async",
+				"bower/pwf.js",
+
+				"bower/pwf-jquery-compat",
+				"bower/pwf-async-compat",
+				"bower/pwf-moment-compat",
+
+				"bower/pwf-config",
+				"bower/pwf-storage",
+				"bower/pwf-preloader",
+				"bower/pwf-input-date",
+
+				"bower/pwf-form",
+				"bower/pwf-queue",
+				"bower/pwf-comm",
+				"bower/pwf-comm-form",
+				"bower/pwf-models-schema",
+				"bower/pwf-models",
+				"bower/pwf-locales",
+
+				"bower/pwf-ui-calendar",
+
 				"scripts/ui",
 				"scripts/ctrl"
 			]
@@ -30,5 +51,13 @@
 				"styles/archive/2016"
 			]
 		}
+	},
+
+	"models":{
+		"public":[
+			"Workshop",
+			"Workshop.Concept",
+			"Car.Offer"
+		]
 	}
 }

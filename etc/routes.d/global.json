@@ -356,6 +356,17 @@
 		"modules":[
 			["stats.meals"]
 		]
+	},
+
+
+	{
+		"name":"form:concept",
+		"url":"/formulare/workshopy",
+		"layout":["layout/base"],
+    "title":"Hlasování o workshopech",
+		"modules":[
+			["forms.concept"]
+		]
 	}
 
 ]

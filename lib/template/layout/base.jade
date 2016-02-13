@@ -33,7 +33,11 @@ html(lang=$loc->get_lang())
       .container
         .col-sm-6.text-xs-center.text-sm-left
           h3 Archiv
-          a(href=$ren->url('year:2015')) Ročník 2015
+          nav
+            li.nav-item
+              a(href=$ren->url('home')) Hlavní strana
+            li.nav-item
+              a(href=$ren->url('year:2015')) Ročník 2015
 
         .col-sm-6
           .partners.text-xs-center.text-sm-right
