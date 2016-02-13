@@ -1,0 +1,12 @@
+<phpunit bootstrap="lib/vendor/just-paja/fudjan/etc/init.d/test.php">
+  <testsuites>
+    <testsuite name="test-tests">
+      <directory suffix=".php">test</directory>
+    </testsuite>
+  </testsuites>
+
+  <logging>
+    <log type="junit" target="var/log/test/junit/output.xml" />
+    <log type="coverage-clover" target="var/log/test/clover/coverage.xml" />
+  </logging>
+</phpunit>
