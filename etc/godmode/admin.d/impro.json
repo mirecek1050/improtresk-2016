@@ -67,5 +67,12 @@
 			"attrs_list":["bank", "from", "amount", "currency", "symvar", "received", "created_at"],
 			"attrs_edit":["symvar", "received", "check"]
 		}
+	},
+
+	{
+		"title":"Uživatelé",
+		"opts":{
+			"model":"System.User"
+		}
 	}
 ]
