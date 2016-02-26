@@ -29,7 +29,7 @@
 		"title":"Workshopy - Improtřesk 2015",
 		"subtitle":"Workshopy",
 		"modules":[
-			["workshop.browse"]
+			["system.partial", {"template":"pages/workshops-preview"}]
 		]
 	},
 
